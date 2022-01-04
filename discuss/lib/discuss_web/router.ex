@@ -14,10 +14,10 @@ defmodule DiscussWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", DiscussWeb do
+  scope "/2", DiscussWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/3", PageController, :index
   end
 
   # Other scopes may use custom stacks.
