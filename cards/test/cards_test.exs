@@ -9,7 +9,9 @@ end
 
 test "shuffling randomizes deck" do
   deck = Cards.create
-  assert deck != Cards.shuffle(deck)
+  refute deck == Cards.shuffle(deck)
 end
+
+
 
 end
